@@ -1,9 +1,14 @@
-<h1>Lists</h1>
+<div class="container">
+  <div class="banner">
+    <img src="app/assets/images/cinema-seats.jpg" alt="cinema-seats">
+    <h1>Lists</h1>
+  </div>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @lists.each do |list| %>
+      <li><%= link_to list.name, list %></li>
+    <% end %>
+  </ul>
 
-<p><%= link_to "Create new list", new_list_path %></p>
+  <p><%= link_to "New list", new_list_path %></p>
+</div>
